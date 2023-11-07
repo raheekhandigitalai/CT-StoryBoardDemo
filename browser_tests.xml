@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation" parallel="tests" thread-count="4">
+
+    <test name="Test_E2E_01">
+
+        <parameter name="browser.name" value="chrome" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_02">
+
+        <parameter name="browser.name" value="firefox" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_03">
+
+        <parameter name="browser.name" value="MicrosoftEdge" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_04">
+
+        <parameter name="browser.name" value="safari" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+</suite>

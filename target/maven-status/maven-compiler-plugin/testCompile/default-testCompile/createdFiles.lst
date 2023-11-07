@@ -1,0 +1,4 @@
+mobile_tests/BankingApplicationPaymentTests.class
+web_tests/BankingApplicationPaymentTests.class
+mobile_tests/DummyTest.class
+web_tests/DummyTest.class
