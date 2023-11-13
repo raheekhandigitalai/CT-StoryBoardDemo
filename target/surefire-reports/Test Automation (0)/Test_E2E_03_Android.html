@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test_E2E_03_Android</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 13 16:16:14 EST 2023</td>
+<td>Started on:</td><td>Mon Nov 13 16:41:35 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>68 seconds (68954 ms)</td>
+<tr><td>Total time:</td><td>84 seconds (84210 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,133 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='mobile_tests.BankingApplicationPaymentTests.setUp()'><b>setUp</b><br>Test class: mobile_tests.BankingApplicationPaymentTests<br>Parameters: org.testng.TestRunner@707431b5, public void mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment(java.lang.String) throws java.lang.InterruptedException, android</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome &apos;117.0.5938&apos;. See https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/web/chromedriver.md for more details 
+Host info: host: &apos;Rahee-Khan&apos;, ip: &apos;fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0&apos;
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=1.22.3, appium:automationName=UIAutomator2, browserName=Chrome, appium:deviceQuery=@os=&apos;android&apos; and @category=&apos;PHONE&apos; and contains(@region, &apos;US&apos;), platformName=ANDROID, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}}]
+Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at base.MobileDeviceDriver.setUp(MobileDeviceDriver.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace62124070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace62124070'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome &apos;117.0.5938&apos;. See https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/web/chromedriver.md for more details 
+Host info: host: &apos;Rahee-Khan&apos;, ip: &apos;fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0&apos;
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=1.22.3, appium:automationName=UIAutomator2, browserName=Chrome, appium:deviceQuery=@os=&apos;android&apos; and @category=&apos;PHONE&apos; and contains(@region, &apos;US&apos;), platformName=ANDROID, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}}]
+Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at base.MobileDeviceDriver.setUp(MobileDeviceDriver.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>84</td>
+<td>mobile_tests.BankingApplicationPaymentTests@56de5251</td></tr>
+<tr>
+<td title='mobile_tests.BankingApplicationPaymentTests.tearDown()'><b>tearDown</b><br>Test class: mobile_tests.BankingApplicationPaymentTests<br>Parameters: [TestResult name={null} status=CREATED method=BankingApplicationPaymentTests.verify_user_making_payment(java.lang.String)[pri:0, instance:mobile_tests.BankingApplicationPaymentTests@56de5251] output={null}], android</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.quit()&quot; because the return value of &quot;base.MobileDeviceDriver.getDriver()&quot; is null
+	at base.MobileDeviceDriver.tearDown(MobileDeviceDriver.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1183387393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1183387393'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.quit()&quot; because the return value of &quot;base.MobileDeviceDriver.getDriver()&quot; is null
+	at base.MobileDeviceDriver.tearDown(MobileDeviceDriver.java:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>mobile_tests.BankingApplicationPaymentTests@56de5251</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +201,79 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment()'><b>verify_user_making_payment</b><br>Test class: mobile_tests.BankingApplicationPaymentTests<br>Parameters: android</td>
-<td></td>
-<td>35</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome &apos;117.0.5938&apos;. See https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/web/chromedriver.md for more details 
+Host info: host: &apos;Rahee-Khan&apos;, ip: &apos;fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0&apos;
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=1.22.3, appium:automationName=UIAutomator2, browserName=Chrome, appium:deviceQuery=@os=&apos;android&apos; and @category=&apos;PHONE&apos; and contains(@region, &apos;US&apos;), platformName=ANDROID, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}}]
+Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at base.MobileDeviceDriver.setUp(MobileDeviceDriver.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace934477881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace934477881'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome &apos;117.0.5938&apos;. See https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/web/chromedriver.md for more details 
+Host info: host: &apos;Rahee-Khan&apos;, ip: &apos;fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0&apos;
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=1.22.3, appium:automationName=UIAutomator2, browserName=Chrome, appium:deviceQuery=@os=&apos;android&apos; and @category=&apos;PHONE&apos; and contains(@region, &apos;US&apos;), platformName=ANDROID, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}}]
+Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:154)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at base.MobileDeviceDriver.setUp(MobileDeviceDriver.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
 <td>mobile_tests.BankingApplicationPaymentTests@56de5251</td></tr>
 </table><p>
 </body>

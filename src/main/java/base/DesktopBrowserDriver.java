@@ -51,9 +51,12 @@ public class DesktopBrowserDriver {
     }
 
     @AfterMethod(alwaysRun = true)
-    public void tearDown(ITestResult result) {
+    @Parameters({"browser.name"})
+    public void tearDown(@Optional ITestResult result, @Optional String browserName) {
 
         try {
+            helper.addPropertyForReporting("browserType", "web_" + browserName);
+
             if (result.isSuccess()) {
                 helper.setReportStatus("Passed", "Test Passed");
             } else {

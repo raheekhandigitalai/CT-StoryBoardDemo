@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation" parallel="tests" thread-count="1">
+
+    <test name="Test_E2E_01_Chrome">
+
+        <parameter name="browser.name" value="chrome" />
+
+        <classes>
+            <class name="web_tests.DummyTest"/>
+        </classes>
+    </test>
+
+</suite>

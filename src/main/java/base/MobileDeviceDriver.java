@@ -60,12 +60,23 @@ public class MobileDeviceDriver {
     }
 
     @AfterMethod(alwaysRun = true)
-    public void tearDown(ITestResult result) {
+    @Parameters({"mobile.os"})
+    public void tearDown(@Optional ITestResult result, @Optional String mobileOS) {
 
-        if (result.isSuccess()) {
-            helper.setReportStatus("Passed", "Test Passed");
-        } else {
-            helper.setReportStatus("Failed", "Test Failed");
+        try {
+            if (mobileOS.equalsIgnoreCase("ios")) {
+                helper.addPropertyForReporting("browserType", "mobile_ios");
+            } else if (mobileOS.equalsIgnoreCase("android")) {
+                helper.addPropertyForReporting("browserType", "mobile_android");
+            }
+
+            if (result.isSuccess()) {
+                helper.setReportStatus("Passed", "Test Passed");
+            } else {
+                helper.setReportStatus("Failed", "Test Failed");
+            }
+        } catch (Exception e) {
+            // Nothing
         }
 
         getDriver().quit();

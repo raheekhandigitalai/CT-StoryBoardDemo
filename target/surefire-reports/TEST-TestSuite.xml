@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="243.335" tests="36" errors="0" skipped="3" failures="10">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/RKhan/IdeaProjects/CT-StoryBoardDemo/target/test-classes:/Users/RKhan/IdeaProjects/CT-StoryBoardDemo/target/classes:/Users/RKhan/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/RKhan/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/RKhan/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/RKhan/.m2/repository/io/appium/java-client/8.3.0/java-client-8.3.0.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-api/4.15.0/selenium-api-4.15.0.jar:/Users/RKhan/.m2/repository/com/google/code/gson/gson/2.10/gson-2.10.jar:/Users/RKhan/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/Users/RKhan/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/RKhan/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/RKhan/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/RKhan/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/RKhan/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/RKhan/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/RKhan/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/RKhan/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/RKhan/.m2/repository/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.10.0/selenium-remote-driver-4.10.0.jar:/Users/RKhan/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/RKhan/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/RKhan/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/RKhan/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/RKhan/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/RKhan/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/RKhan/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/RKhan/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/RKhan/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/RKhan/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/RKhan/.m2/repository/io/netty/netty-buffer/4.1.92.Final/netty-buffer-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-codec-http/4.1.92.Final/netty-codec-http-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-codec/4.1.92.Final/netty-codec-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-handler/4.1.92.Final/netty-handler-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.92.Final/netty-transport-classes-epoll-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.92.Final/netty-transport-classes-kqueue-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-native-epoll/4.1.92.Final/netty-transport-native-epoll-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.92.Final/netty-transport-native-kqueue-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.92.Final/netty-transport-native-unix-common-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport/4.1.92.Final/netty-transport-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-resolver/4.1.92.Final/netty-resolver-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-api/1.26.0/opentelemetry-api-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-context/1.26.0/opentelemetry-context-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.26.0/opentelemetry-exporter-logging-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.26.0/opentelemetry-sdk-metrics-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.26.0-alpha/opentelemetry-extension-incubator-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.26.0-alpha/opentelemetry-sdk-logs-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.26.0-alpha/opentelemetry-api-logs-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.26.0-alpha/opentelemetry-api-events-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.26.0/opentelemetry-sdk-common-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.26.0/opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.26.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.26.0/opentelemetry-sdk-trace-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.26.0/opentelemetry-sdk-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.26.0-alpha/opentelemetry-semconv-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/RKhan/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/RKhan/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/RKhan/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/RKhan/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/RKhan/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/RKhan/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/RKhan/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-http/4.10.0/selenium-http-4.10.0.jar:/Users/RKhan/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-json/4.10.0/selenium-json-4.10.0.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.10.0/selenium-manager-4.10.0.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-support/4.10.0/selenium-support-4.10.0.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="ct.cloudUrl" value="https://uscloud.experitest.com/wd/hub"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/21.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/RKhan/IdeaProjects/CT-StoryBoardDemo/target/surefire/surefirebooter-20231113164134124_3.jar /Users/RKhan/IdeaProjects/CT-StoryBoardDemo/target/surefire 2023-11-13T16-41-33_968-jvmRun1 surefire-20231113164134124_1tmp surefire_0-20231113164134124_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/RKhan/IdeaProjects/CT-StoryBoardDemo/target/test-classes:/Users/RKhan/IdeaProjects/CT-StoryBoardDemo/target/classes:/Users/RKhan/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/RKhan/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/RKhan/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/RKhan/.m2/repository/io/appium/java-client/8.3.0/java-client-8.3.0.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-api/4.15.0/selenium-api-4.15.0.jar:/Users/RKhan/.m2/repository/com/google/code/gson/gson/2.10/gson-2.10.jar:/Users/RKhan/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/Users/RKhan/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/RKhan/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/RKhan/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/RKhan/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/RKhan/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/RKhan/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/RKhan/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/RKhan/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/RKhan/.m2/repository/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.10.0/selenium-remote-driver-4.10.0.jar:/Users/RKhan/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/RKhan/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/RKhan/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/RKhan/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/RKhan/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/RKhan/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/RKhan/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/RKhan/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/RKhan/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/RKhan/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/RKhan/.m2/repository/io/netty/netty-buffer/4.1.92.Final/netty-buffer-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-codec-http/4.1.92.Final/netty-codec-http-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-codec/4.1.92.Final/netty-codec-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-handler/4.1.92.Final/netty-handler-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-common/4.1.92.Final/netty-common-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.92.Final/netty-transport-classes-epoll-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.92.Final/netty-transport-classes-kqueue-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-native-epoll/4.1.92.Final/netty-transport-native-epoll-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.92.Final/netty-transport-native-kqueue-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.92.Final/netty-transport-native-unix-common-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport/4.1.92.Final/netty-transport-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-resolver/4.1.92.Final/netty-resolver-4.1.92.Final.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-api/1.26.0/opentelemetry-api-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-context/1.26.0/opentelemetry-context-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.26.0/opentelemetry-exporter-logging-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.26.0/opentelemetry-sdk-metrics-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.26.0-alpha/opentelemetry-extension-incubator-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.26.0-alpha/opentelemetry-sdk-logs-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.26.0-alpha/opentelemetry-api-logs-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.26.0-alpha/opentelemetry-api-events-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.26.0/opentelemetry-sdk-common-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.26.0/opentelemetry-sdk-extension-autoconfigure-spi-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.26.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.26.0/opentelemetry-sdk-trace-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.26.0/opentelemetry-sdk-1.26.0.jar:/Users/RKhan/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.26.0-alpha/opentelemetry-semconv-1.26.0-alpha.jar:/Users/RKhan/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/RKhan/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/RKhan/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/RKhan/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/RKhan/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/RKhan/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/RKhan/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/RKhan/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/RKhan/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-http/4.10.0/selenium-http-4.10.0.jar:/Users/RKhan/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-json/4.10.0/selenium-json-4.10.0.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.10.0/selenium-manager-4.10.0.jar:/Users/RKhan/.m2/repository/org/seleniumhq/selenium/selenium-support/4.10.0/selenium-support-4.10.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/RKhan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/21.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/RKhan/IdeaProjects/CT-StoryBoardDemo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/RKhan/IdeaProjects/CT-StoryBoardDemo/target/surefire/surefirebooter-20231113164134124_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1"/>
+    <property name="user.name" value="RKhan"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="ct.accesskey" value="eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0"/>
+    <property name="path.separator" value=":"/>
+    <property name="xmlFile" value="browser_tests.xml,mobile_tests.xml"/>
+    <property name="otel.metrics.exporter" value="none"/>
+    <property name="os.version" value="14.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="otel.traces.exporter" value="none"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/RKhan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/l3/1dp807rx6bx6b9ylhpflm29r0000gp/T/"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="/Users/RKhan/IdeaProjects/CT-StoryBoardDemo"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/RKhan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="21.0.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="3.512">
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Nov 13, 2023 4:41:35 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+]]></system-err>
+  </testcase>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="0.581"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="1.119"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="2.164"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="2.334"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="0.037"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="0.835"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="0.948"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="1.475"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="1.784"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="2.762"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="9.142"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="9.764"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="11.734"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="11.783"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="11.803"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="12.131"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="15.283"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="18.832"/>
+  <testcase name="verify_user_making_payment" classname="web_tests.BankingApplicationPaymentTests" time="21.564"/>
+  <testcase name="verify_user_making_payment[android](1)" classname="mobile_tests.BankingApplicationPaymentTests" time="0.982">
+    <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //div[@class=&apos;dx-button-content&apos; and contains(text(), &apos;Login&apos;)] (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:appiumVersion: 1.22.3, appium:automationName: UIAutomator2, appium:chromedriverExecutableDir: /chromedrivers, appium:cloudViewLink: https://us2region.experites..., appium:databaseEnabled: false, appium:desired: {appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, chromedriverExecutableDir: /chromedrivers, deviceName: auto, deviceQuery: @os=&apos;android&apos; and @category..., digitalai:appiumVersion: 1.22.3, experitest:client8: true, experitest:originalSkipDeviceInitialization: false, experitestCloudSessionId: CLOUD-SID:2023-11-13_21-41-..., platformName: ANDROID, platformVersion: 11.0, reportTestId: 1015, reportUrl: https://uscloud.experitest...., skipDeviceInitialization: true, skipServerInstallation: true, testName: verify_user_making_payment, udid: RF8M82E3CMN}, appium:deviceApiLevel: 30, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N975U1, appium:deviceName: RF8M82E3CMN, appium:deviceQuery: @os=&apos;android&apos; and @category..., appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RF8M82E3CMN, appium:ehmPrefixUrl: /agent-10713675, appium:ehmUrl: https://us2region.experites..., appium:experitestCloudSessionId: CLOUD-SID:2023-11-13_21-41-..., appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:reportTestId: 1015, appium:reportUrl: https://uscloud.experitest...., appium:skipDeviceInitialization: true, appium:skipServerInstallation: true, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:testName: verify_user_making_payment, appium:udid: RF8M82E3CMN, appium:viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, digitalai:appiumVersion: 1.22.3, experitest:client8: true, experitest:originalSkipDeviceInitialization: false, platformName: ANDROID}&#10;Session ID: 6165a3bd-318b-4989-ad4c-c916ac0d464a" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //div[@class='dx-button-content' and contains(text(), 'Login')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '21.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.google.android.apps.chr..., appium:appPackage: com.android.chrome, appium:appiumVersion: 1.22.3, appium:automationName: UIAutomator2, appium:chromedriverExecutableDir: /chromedrivers, appium:cloudViewLink: https://us2region.experites..., appium:databaseEnabled: false, appium:desired: {appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, chromedriverExecutableDir: /chromedrivers, deviceName: auto, deviceQuery: @os='android' and @category..., digitalai:appiumVersion: 1.22.3, experitest:client8: true, experitest:originalSkipDeviceInitialization: false, experitestCloudSessionId: CLOUD-SID:2023-11-13_21-41-..., platformName: ANDROID, platformVersion: 11.0, reportTestId: 1015, reportUrl: https://uscloud.experitest...., skipDeviceInitialization: true, skipServerInstallation: true, testName: verify_user_making_payment, udid: RF8M82E3CMN}, appium:deviceApiLevel: 30, appium:deviceManufacturer: samsung, appium:deviceModel: SM-N975U1, appium:deviceName: RF8M82E3CMN, appium:deviceQuery: @os='android' and @category..., appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: RF8M82E3CMN, appium:ehmPrefixUrl: /agent-10713675, appium:ehmUrl: https://us2region.experites..., appium:experitestCloudSessionId: CLOUD-SID:2023-11-13_21-41-..., appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 11, appium:reportTestId: 1015, appium:reportUrl: https://uscloud.experitest...., appium:skipDeviceInitialization: true, appium:skipServerInstallation: true, appium:statBarHeight: 85, appium:takesScreenshot: true, appium:testName: verify_user_making_payment, appium:udid: RF8M82E3CMN, appium:viewportRect: {height: 1984, left: 0, top: 85, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, browserName: Chrome, digitalai:appiumVersion: 1.22.3, experitest:client8: true, experitest:originalSkipDeviceInitialization: false, platformName: ANDROID}
+Session ID: 6165a3bd-318b-4989-ad4c-c916ac0d464a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment(BankingApplicationPaymentTests.java:19)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="verify_user_making_payment[android](1)" classname="mobile_tests.BankingApplicationPaymentTests" time="1.404"/>
+  <testcase name="verify_user_making_payment[android](1)" classname="mobile_tests.BankingApplicationPaymentTests" time="12.041"/>
+  <testcase name="verify_user_making_payment[android](1)" classname="mobile_tests.BankingApplicationPaymentTests" time="16.851"/>
+  <testcase name="verify_user_making_payment[android](1)" classname="mobile_tests.BankingApplicationPaymentTests" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome &apos;117.0.5938&apos;. See https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/web/chromedriver.md for more details &#10;Host info: host: &apos;Rahee-Khan&apos;, ip: &apos;fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0&apos;&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=1.22.3, appium:automationName=UIAutomator2, browserName=Chrome, appium:deviceQuery=@os=&apos;android&apos; and @category=&apos;PHONE&apos; and contains(@region, &apos;US&apos;), platformName=ANDROID, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}}]&#10;Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}"/>
+  </testcase>
+  <testcase name="setUp[org.testng.TestRunner@3e9351b0, public void mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment(java.lang.String) throws java.lang.InterruptedException, ios](0)" classname="mobile_tests.BankingApplicationPaymentTests" time="2.305">
+    <failure message="Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: java.net.ConnectException: Connection refused &#10;Host info: host: &apos;Rahee-Khan&apos;, ip: &apos;fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0&apos;&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=2.1.3, appium:automationName=XCUITest, browserName=Safari, appium:deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos; and contains(@region, &apos;US&apos;), platformName=IOS, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os=&apos;ios&apos; and @category=&apos;PH..., platformName: IOS, testName: verify_user_making_payment}}]&#10;Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os=&apos;ios&apos; and @category=&apos;PH..., platformName: IOS, testName: verify_user_making_payment}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: java.net.ConnectException: Connection refused 
+Host info: host: 'Rahee-Khan', ip: 'fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '21.0.1'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=2.1.3, appium:automationName=XCUITest, browserName=Safari, appium:deviceQuery=@os='ios' and @category='PHONE' and contains(@region, 'US'), platformName=IOS, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os='ios' and @category='PH..., platformName: IOS, testName: verify_user_making_payment}}]
+Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os='ios' and @category='PH..., platformName: IOS, testName: verify_user_making_payment}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:106)
+	at base.MobileDeviceDriver.setUp(MobileDeviceDriver.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="verify_user_making_payment[ios](1)" classname="mobile_tests.BankingApplicationPaymentTests" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: java.net.ConnectException: Connection refused &#10;Host info: host: &apos;Rahee-Khan&apos;, ip: &apos;fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0&apos;&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=2.1.3, appium:automationName=XCUITest, browserName=Safari, appium:deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos; and contains(@region, &apos;US&apos;), platformName=IOS, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os=&apos;ios&apos; and @category=&apos;PH..., platformName: IOS, testName: verify_user_making_payment}}]&#10;Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os=&apos;ios&apos; and @category=&apos;PH..., platformName: IOS, testName: verify_user_making_payment}"/>
+  </testcase>
+  <testcase name="verify_user_making_payment[ios](1)" classname="mobile_tests.BankingApplicationPaymentTests" time="4.486">
+    <failure message="Amount has not been deducted. did not expect [35000] but found [35000]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Amount has not been deducted. did not expect [35000] but found [35000]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failEquals(Assert.java:1041)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
+	at org.testng.Assert.assertNotEquals(Assert.java:1531)
+	at mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment(BankingApplicationPaymentTests.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="verify_user_making_payment[ios](1)" classname="mobile_tests.BankingApplicationPaymentTests" time="11.803">
+    <failure message="Amount has not been deducted. did not expect [35000] but found [35000]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Amount has not been deducted. did not expect [35000] but found [35000]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failEquals(Assert.java:1041)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
+	at org.testng.Assert.assertNotEquals(Assert.java:1531)
+	at mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment(BankingApplicationPaymentTests.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="verify_user_making_payment[ios](1)" classname="mobile_tests.BankingApplicationPaymentTests" time="19.982">
+    <failure message="Amount has not been deducted. did not expect [35000] but found [35000]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Amount has not been deducted. did not expect [35000] but found [35000]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failEquals(Assert.java:1041)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
+	at org.testng.Assert.assertNotEquals(Assert.java:1531)
+	at mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment(BankingApplicationPaymentTests.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="verify_user_making_payment[ios](1)" classname="mobile_tests.BankingApplicationPaymentTests" time="0">
+    <skipped message="Could not start a new session. Response code 500. Message: Failed to prepare the Appium OSS Infrastructure: runWDA &gt; Cannot start run_wda after 120 retries : java.util.concurrent.ExecutionException - java.net.ConnectException: Failed to connect - received number 3, link:https://uscloud.experitest.com:443/reporter/#/test/992/project/Art Of Testing - OSS/ &#10;Host info: host: &apos;Rahee-Khan&apos;, ip: &apos;fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0&apos;&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=2.1.3, appium:automationName=XCUITest, browserName=Safari, appium:deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos; and contains(@region, &apos;US&apos;), platformName=IOS, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os=&apos;ios&apos; and @category=&apos;PH..., platformName: IOS, testName: verify_user_making_payment}}]&#10;Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os=&apos;ios&apos; and @category=&apos;PH..., platformName: IOS, testName: verify_user_making_payment}"/>
+  </testcase>
+  <testcase name="tearDown[[TestResult name={null} status=CREATED method=BankingApplicationPaymentTests.verify_user_making_payment(java.lang.String)[pri:0, instance:mobile_tests.BankingApplicationPaymentTests@6d2a209c] output={null}], ios](0)" classname="mobile_tests.BankingApplicationPaymentTests" time="0.002">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.quit()&quot; because the return value of &quot;base.MobileDeviceDriver.getDriver()&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.quit()" because the return value of "base.MobileDeviceDriver.getDriver()" is null
+	at base.MobileDeviceDriver.tearDown(MobileDeviceDriver.java:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="setUp[org.testng.TestRunner@707431b5, public void mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment(java.lang.String) throws java.lang.InterruptedException, android](0)" classname="mobile_tests.BankingApplicationPaymentTests" time="32.559">
+    <failure message="Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome &apos;117.0.5938&apos;. See https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/web/chromedriver.md for more details &#10;Host info: host: &apos;Rahee-Khan&apos;, ip: &apos;fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0&apos;&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=1.22.3, appium:automationName=UIAutomator2, browserName=Chrome, appium:deviceQuery=@os=&apos;android&apos; and @category=&apos;PHONE&apos; and contains(@region, &apos;US&apos;), platformName=ANDROID, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}}]&#10;Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os=&apos;android&apos; and @category..., platformName: ANDROID, testName: verify_user_making_payment}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: No Chromedriver found that can automate Chrome '117.0.5938'. See https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/web/chromedriver.md for more details 
+Host info: host: 'Rahee-Khan', ip: 'fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '21.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=1.22.3, appium:automationName=UIAutomator2, browserName=Chrome, appium:deviceQuery=@os='android' and @category='PHONE' and contains(@region, 'US'), platformName=ANDROID, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os='android' and @category..., platformName: ANDROID, testName: verify_user_making_payment}}]
+Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 1.22.3, automationName: UIAutomator2, browserName: Chrome, deviceQuery: @os='android' and @category..., platformName: ANDROID, testName: verify_user_making_payment}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:117)
+	at base.MobileDeviceDriver.setUp(MobileDeviceDriver.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="tearDown[[TestResult name={null} status=CREATED method=BankingApplicationPaymentTests.verify_user_making_payment(java.lang.String)[pri:0, instance:mobile_tests.BankingApplicationPaymentTests@56de5251] output={null}], android](0)" classname="mobile_tests.BankingApplicationPaymentTests" time="0.002">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.quit()&quot; because the return value of &quot;base.MobileDeviceDriver.getDriver()&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.quit()" because the return value of "base.MobileDeviceDriver.getDriver()" is null
+	at base.MobileDeviceDriver.tearDown(MobileDeviceDriver.java:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="setUp[org.testng.TestRunner@7f5f74f, public void mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment(java.lang.String) throws java.lang.InterruptedException, ios](0)" classname="mobile_tests.BankingApplicationPaymentTests" time="158.059">
+    <failure message="Could not start a new session. Response code 500. Message: Failed to prepare the Appium OSS Infrastructure: runWDA &gt; Cannot start run_wda after 120 retries : java.util.concurrent.ExecutionException - java.net.ConnectException: Failed to connect - received number 3, link:https://uscloud.experitest.com:443/reporter/#/test/992/project/Art Of Testing - OSS/ &#10;Host info: host: &apos;Rahee-Khan&apos;, ip: &apos;fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0&apos;&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;21.0.1&apos;&#10;Driver info: io.appium.java_client.ios.IOSDriver&#10;Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=2.1.3, appium:automationName=XCUITest, browserName=Safari, appium:deviceQuery=@os=&apos;ios&apos; and @category=&apos;PHONE&apos; and contains(@region, &apos;US&apos;), platformName=IOS, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os=&apos;ios&apos; and @category=&apos;PH..., platformName: IOS, testName: verify_user_making_payment}}]&#10;Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os=&apos;ios&apos; and @category=&apos;PH..., platformName: IOS, testName: verify_user_making_payment}" type="org.openqa.selenium.SessionNotCreatedException"><![CDATA[org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: Failed to prepare the Appium OSS Infrastructure: runWDA > Cannot start run_wda after 120 retries : java.util.concurrent.ExecutionException - java.net.ConnectException: Failed to connect - received number 3, link:https://uscloud.experitest.com:443/reporter/#/test/992/project/Art Of Testing - OSS/ 
+Host info: host: 'Rahee-Khan', ip: 'fd41:8c9d:9153:c210:c8b:2aea:603c:3aaf%en0'
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '14.0', java.version: '21.0.1'
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:accessKey=eyJhbGciOiJIUzI1NiJ9.eyJ4cC51Ijo5ODU3OTgwLCJ4cC5wIjoxMDk4NzU5NCwieHAubSI6MTY4OTA4MTQ5ODEzOSwiZXhwIjoyMDEwNTkwNTk4LCJpc3MiOiJjb20uZXhwZXJpdGVzdCJ9.ar3l55jlt470f5fb8CPpkFeJ_UaNQMfpzLEjmfjmyd0, appium:appiumVersion=2.1.3, appium:automationName=XCUITest, browserName=Safari, appium:deviceQuery=@os='ios' and @category='PHONE' and contains(@region, 'US'), platformName=IOS, appium:testName=verify_user_making_payment}], desiredCapabilities=Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os='ios' and @category='PH..., platformName: IOS, testName: verify_user_making_payment}}]
+Capabilities {accessKey: eyJhbGciOiJIUzI1NiJ9.eyJ4cC..., appiumVersion: 2.1.3, automationName: XCUITest, browserName: Safari, deviceQuery: @os='ios' and @category='PH..., platformName: IOS, testName: verify_user_making_payment}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:154)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+	at io.appium.java_client.ios.IOSDriver.<init>(IOSDriver.java:106)
+	at base.MobileDeviceDriver.setUp(MobileDeviceDriver.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="tearDown[[TestResult name={null} status=CREATED method=BankingApplicationPaymentTests.verify_user_making_payment(java.lang.String)[pri:0, instance:mobile_tests.BankingApplicationPaymentTests@670002] output={null}], ios](0)" classname="mobile_tests.BankingApplicationPaymentTests" time="0.002">
+    <failure message="Cannot invoke &quot;org.openqa.selenium.remote.RemoteWebDriver.quit()&quot; because the return value of &quot;base.MobileDeviceDriver.getDriver()&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.remote.RemoteWebDriver.quit()" because the return value of "base.MobileDeviceDriver.getDriver()" is null
+	at base.MobileDeviceDriver.tearDown(MobileDeviceDriver.java:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:546)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+</testsuite>
