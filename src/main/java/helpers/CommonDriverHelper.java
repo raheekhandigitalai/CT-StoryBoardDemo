@@ -24,6 +24,7 @@ public class CommonDriverHelper {
         driver.executeScript("seetest:client.setReportStatus", status, message);
     }
 
+    // For Web Browser Tests only
     public void setReportStatus(String status, String message, String stackTrace) {
         driver.executeScript("seetest:client.setReportStatus", status, message, stackTrace);
     }

@@ -1,5 +1,6 @@
 package base;
 
+import helpers.CommonDriverHelper;
 import helpers.PropertiesReader;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -36,6 +37,8 @@ public class MobileDeviceDriver {
         return wait.get();
     }
 
+    protected CommonDriverHelper helper;
+
     @BeforeMethod
     @Parameters({"mobile.os"})
     public void setUp(@Optional ITestContext context, @Optional Method method, String mobileOS) throws MalformedURLException {
@@ -53,15 +56,16 @@ public class MobileDeviceDriver {
         }
 
         wait.set(new WebDriverWait(getDriver(), Duration.ofSeconds(10)));
+        helper = new CommonDriverHelper(getDriver());
     }
 
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) {
 
         if (result.isSuccess()) {
-            setReportStatus("Passed", "Test Passed");
+            helper.setReportStatus("Passed", "Test Passed");
         } else {
-            setReportStatus("Failed", "Test Failed");
+            helper.setReportStatus("Failed", "Test Failed");
         }
 
         getDriver().quit();
@@ -85,14 +89,6 @@ public class MobileDeviceDriver {
         caps.setCapability("appiumVersion", "2.1.3");
         caps.setCapability("automationName", "XCUITest");
         return caps;
-    }
-
-    protected void addStepInReport(String message, String status) {
-        getDriver().executeScript("seetest:client.report", message, status);
-    }
-
-    protected void setReportStatus(String status, String message) {
-        getDriver().executeScript("seetest:client.setReportStatus", status, message);
     }
 
 }

@@ -23,6 +23,8 @@ public class DesktopBrowserDriver {
     protected ThreadLocal<DesiredCapabilities> desiredCapabilities = new ThreadLocal<>();
     protected ThreadLocal<WebDriverWait> wait = new ThreadLocal<>();
 
+    protected CommonDriverHelper helper;
+
     protected RemoteWebDriver getDriver() {
         return driver.get();
     }
@@ -41,8 +43,9 @@ public class DesktopBrowserDriver {
 
         desiredCapabilities.set(setWebDriver(browserName, caps));
         driver.set(new RemoteWebDriver(new URL(new PropertiesReader().getProperty("ct.cloudUrl")), caps));
-
         wait.set(new WebDriverWait(getDriver(), Duration.ofSeconds(10)));
+        helper = new CommonDriverHelper(getDriver());
+
         getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         getDriver().manage().window().maximize();
     }
@@ -52,9 +55,9 @@ public class DesktopBrowserDriver {
 
         try {
             if (result.isSuccess()) {
-                setReportStatus("Passed", "Test Passed");
+                helper.setReportStatus("Passed", "Test Passed");
             } else {
-                setReportStatus("Failed", "Test Failed", result.getThrowable().getCause().toString());
+                helper.setReportStatus("Failed", "Test Failed", result.getThrowable().getCause().toString());
             }
         } catch (Exception e) {
             // Nothing
@@ -68,18 +71,6 @@ public class DesktopBrowserDriver {
     protected DesiredCapabilities setWebDriver(String browserName, DesiredCapabilities caps) {
         caps.setCapability("browserName", browserName);
         return caps;
-    }
-
-    protected void addStepInReport(String message, String status) {
-        getDriver().executeScript("seetest:client.report", message, status);
-    }
-
-    protected void setReportStatus(String status, String message) {
-        getDriver().executeScript("seetest:client.setReportStatus", status, message);
-    }
-
-    protected void setReportStatus(String status, String message, String stackTrace) {
-        getDriver().executeScript("seetest:client.setReportStatus", status, message, stackTrace);
     }
 
 }

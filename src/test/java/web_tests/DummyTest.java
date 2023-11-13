@@ -7,7 +7,10 @@ public class DummyTest extends DesktopBrowserDriver {
 
     @Test
     public void navigation_test() {
-        getDriver().navigate().to("https://digital.ai");
+        getDriver().navigate().to("https://demo-bank.ct.digital.ai/login");
+
+        System.out.println(getDriver().getTitle());
+        System.out.println(getDriver().getCurrentUrl());
     }
 
 }

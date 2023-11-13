@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Automation" parallel="tests" thread-count="4">
+<suite name="Test Automation" parallel="tests" thread-count="20">
 
-    <test name="Test_E2E_01">
+    <test name="Test_E2E_01_Chrome">
 
         <parameter name="browser.name" value="chrome" />
 
@@ -11,7 +11,43 @@
         </classes>
     </test>
 
-    <test name="Test_E2E_02">
+    <test name="Test_E2E_02_Chrome">
+
+        <parameter name="browser.name" value="chrome" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_03_Chrome">
+
+        <parameter name="browser.name" value="chrome" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_04_Chrome">
+
+        <parameter name="browser.name" value="chrome" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_05_Chrome">
+
+        <parameter name="browser.name" value="chrome" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_01_Firefox">
 
         <parameter name="browser.name" value="firefox" />
 
@@ -20,7 +56,43 @@
         </classes>
     </test>
 
-    <test name="Test_E2E_03">
+    <test name="Test_E2E_02_Firefox">
+
+        <parameter name="browser.name" value="firefox" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_03_Firefox">
+
+        <parameter name="browser.name" value="firefox" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_04_Firefox">
+
+        <parameter name="browser.name" value="firefox" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_05_Firefox">
+
+        <parameter name="browser.name" value="firefox" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_01_Edge">
 
         <parameter name="browser.name" value="MicrosoftEdge" />
 
@@ -29,7 +101,79 @@
         </classes>
     </test>
 
-    <test name="Test_E2E_04">
+    <test name="Test_E2E_02_Edge">
+
+        <parameter name="browser.name" value="MicrosoftEdge" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_03_Edge">
+
+        <parameter name="browser.name" value="MicrosoftEdge" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_04_Edge">
+
+        <parameter name="browser.name" value="MicrosoftEdge" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_05_Edge">
+
+        <parameter name="browser.name" value="MicrosoftEdge" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_01_Safari">
+
+        <parameter name="browser.name" value="safari" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_02_Safari">
+
+        <parameter name="browser.name" value="safari" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_03_Safari">
+
+        <parameter name="browser.name" value="safari" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_04_Safari">
+
+        <parameter name="browser.name" value="safari" />
+
+        <classes>
+            <class name="web_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_05_Safari">
 
         <parameter name="browser.name" value="safari" />
 

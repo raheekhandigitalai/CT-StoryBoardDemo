@@ -28,12 +28,12 @@ public class BankingApplicationPaymentTests extends DesktopBrowserDriver {
 
         try {
             if (actualText.equals(expectedText)) {
-                addStepInReport("Actual Text matches with Expected Value", "true");
-                addStepInReport("Actual Text: " + actualText + ", Expected Value :" + expectedText, "true");
+                helper.addStepInReport("Actual Text matches with Expected Value", "true");
+                helper.addStepInReport("Actual Text: " + actualText + ", Expected Value :" + expectedText, "true");
             }
         } catch (Exception e) {
-            addStepInReport("Actual Text does not match with Expected Value", "false");
-            addStepInReport("Actual Text: " + actualText + ", Expected Value : " + expectedText, "false");
+            helper.addStepInReport("Actual Text does not match with Expected Value", "false");
+            helper.addStepInReport("Actual Text: " + actualText + ", Expected Value : " + expectedText, "false");
         }
 
         WebElement currentAmountElement = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='amount']")));
@@ -62,12 +62,12 @@ public class BankingApplicationPaymentTests extends DesktopBrowserDriver {
         try {
             assertNotEquals(balanceBeforePayment, balanceAfterPayment, "Amount has not been deducted.");
 
-            addStepInReport("Amount has been deducted", "true");
-            addStepInReport("Previous Balance: " + balanceBeforePayment + ", Current Balance: " + balanceAfterPayment, "true");
+            helper.addStepInReport("Amount has been deducted", "true");
+            helper.addStepInReport("Previous Balance: " + balanceBeforePayment + ", Current Balance: " + balanceAfterPayment, "true");
         } catch (AssertionError e) {
-            addStepInReport(e.getMessage(), "false");
-            addStepInReport("Amount has not been deducted", "false");
-            addStepInReport("Previous Balance: " + balanceBeforePayment + ", Current Balance: " + balanceAfterPayment, "false");
+            helper.addStepInReport(e.getMessage(), "false");
+            helper.addStepInReport("Amount has not been deducted", "false");
+            helper.addStepInReport("Previous Balance: " + balanceBeforePayment + ", Current Balance: " + balanceAfterPayment, "false");
             throw e;
         }
 

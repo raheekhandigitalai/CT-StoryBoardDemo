@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Automation" parallel="tests" thread-count="2">
+<suite name="Test Automation" parallel="tests" thread-count="10">
 
-    <test name="Test_E2E_01">
+    <test name="Test_E2E_01_Android">
 
         <parameter name="mobile.os" value="android" />
 
@@ -11,7 +11,79 @@
         </classes>
     </test>
 
-    <test name="Test_E2E_02">
+    <test name="Test_E2E_02_Android">
+
+        <parameter name="mobile.os" value="android" />
+
+        <classes>
+            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_03_Android">
+
+        <parameter name="mobile.os" value="android" />
+
+        <classes>
+            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_04_Android">
+
+        <parameter name="mobile.os" value="android" />
+
+        <classes>
+            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_05_Android">
+
+        <parameter name="mobile.os" value="android" />
+
+        <classes>
+            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_01_iOS">
+
+        <parameter name="mobile.os" value="ios" />
+
+        <classes>
+            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_02_iOS">
+
+        <parameter name="mobile.os" value="ios" />
+
+        <classes>
+            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_03_iOS">
+
+        <parameter name="mobile.os" value="ios" />
+
+        <classes>
+            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_04_iOS">
+
+        <parameter name="mobile.os" value="ios" />
+
+        <classes>
+            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+        </classes>
+    </test>
+
+    <test name="Test_E2E_05_iOS">
 
         <parameter name="mobile.os" value="ios" />
 
