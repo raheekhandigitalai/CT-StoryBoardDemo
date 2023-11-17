@@ -1,4 +1,6 @@
-mobile_tests/BankingApplicationPaymentTests.class
-web_tests/BankingApplicationPaymentTests.class
-mobile_tests/DummyTest.class
-web_tests/DummyTest.class
+web_tests/MainPageTests.class
+mobile_tests/MainPageTests.class
+mobile_tests/DebugTests.class
+web_tests/DebugTests.class
+mobile_tests/PaymentTests.class
+web_tests/PaymentTests.class

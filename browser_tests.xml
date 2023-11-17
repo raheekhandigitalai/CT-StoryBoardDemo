@@ -7,7 +7,8 @@
         <parameter name="browser.name" value="chrome" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -16,7 +17,8 @@
         <parameter name="browser.name" value="chrome" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -25,7 +27,8 @@
         <parameter name="browser.name" value="chrome" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -34,7 +37,8 @@
         <parameter name="browser.name" value="chrome" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -43,7 +47,8 @@
         <parameter name="browser.name" value="chrome" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -52,7 +57,8 @@
         <parameter name="browser.name" value="firefox" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -61,7 +67,8 @@
         <parameter name="browser.name" value="firefox" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -70,7 +77,8 @@
         <parameter name="browser.name" value="firefox" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -79,7 +87,8 @@
         <parameter name="browser.name" value="firefox" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -88,7 +97,8 @@
         <parameter name="browser.name" value="firefox" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -97,7 +107,8 @@
         <parameter name="browser.name" value="MicrosoftEdge" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -106,7 +117,8 @@
         <parameter name="browser.name" value="MicrosoftEdge" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -115,7 +127,8 @@
         <parameter name="browser.name" value="MicrosoftEdge" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -124,7 +137,8 @@
         <parameter name="browser.name" value="MicrosoftEdge" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -133,7 +147,8 @@
         <parameter name="browser.name" value="MicrosoftEdge" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -142,7 +157,8 @@
         <parameter name="browser.name" value="safari" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -151,7 +167,8 @@
         <parameter name="browser.name" value="safari" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -160,7 +177,8 @@
         <parameter name="browser.name" value="safari" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -169,7 +187,8 @@
         <parameter name="browser.name" value="safari" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -178,7 +197,8 @@
         <parameter name="browser.name" value="safari" />
 
         <classes>
-            <class name="web_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="web_tests.PaymentTests"/>
         </classes>
     </test>
 

@@ -7,7 +7,7 @@
         <parameter name="mobile.os" value="ios" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="mobile_tests.MainPageTests"/>
         </classes>
     </test>
 
@@ -16,7 +16,7 @@
         <parameter name="mobile.os" value="android" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="mobile_tests.MainPageTests"/>
         </classes>
     </test>
 

@@ -3,7 +3,7 @@ package web_tests;
 import base.DesktopBrowserDriver;
 import org.testng.annotations.Test;
 
-public class DummyTest extends DesktopBrowserDriver {
+public class DebugTests extends DesktopBrowserDriver {
 
     @Test
     public void navigation_test() {

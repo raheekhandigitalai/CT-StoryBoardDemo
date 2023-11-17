@@ -7,7 +7,8 @@
         <parameter name="mobile.os" value="android" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="mobile_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -16,7 +17,8 @@
         <parameter name="mobile.os" value="android" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="mobile_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -25,7 +27,8 @@
         <parameter name="mobile.os" value="android" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="mobile_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -34,7 +37,8 @@
         <parameter name="mobile.os" value="android" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="mobile_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -43,7 +47,8 @@
         <parameter name="mobile.os" value="android" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="mobile_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -52,7 +57,8 @@
         <parameter name="mobile.os" value="ios" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="mobile_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -61,7 +67,8 @@
         <parameter name="mobile.os" value="ios" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="mobile_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -70,7 +77,8 @@
         <parameter name="mobile.os" value="ios" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="mobile_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -79,7 +87,8 @@
         <parameter name="mobile.os" value="ios" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="mobile_tests.PaymentTests"/>
         </classes>
     </test>
 
@@ -88,7 +97,8 @@
         <parameter name="mobile.os" value="ios" />
 
         <classes>
-            <class name="mobile_tests.BankingApplicationPaymentTests"/>
+            <class name="web_tests.MainPageTests"/>
+            <class name="mobile_tests.PaymentTests"/>
         </classes>
     </test>
 

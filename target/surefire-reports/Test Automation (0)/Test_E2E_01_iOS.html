@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test_E2E_01_iOS</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 13 16:41:35 EST 2023</td>
+<td>Started on:</td><td>Thu Nov 16 18:02:44 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>67 seconds (67298 ms)</td>
+<tr><td>Total time:</td><td>94 seconds (94803 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,21 +75,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment()'><b>verify_user_making_payment</b><br>Test class: mobile_tests.BankingApplicationPaymentTests<br>Parameters: ios</td>
+<td title='mobile_tests.PaymentTests.verify_user_making_payment()'><b>verify_user_making_payment</b><br>Test class: mobile_tests.PaymentTests<br>Parameters: ios</td>
 <td><div><pre>java.lang.AssertionError: Amount has not been deducted. did not expect [35000] but found [35000]
-	at mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment(BankingApplicationPaymentTests.java:86)
+	at mobile_tests.PaymentTests.verify_user_making_payment(PaymentTests.java:86)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823204146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace823204146'><pre>java.lang.AssertionError: Amount has not been deducted. did not expect [35000] but found [35000]
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace165206366", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace165206366'><pre>java.lang.AssertionError: Amount has not been deducted. did not expect [35000] but found [35000]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failEquals(Assert.java:1041)
 	at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
 	at org.testng.Assert.assertNotEquals(Assert.java:1531)
-	at mobile_tests.BankingApplicationPaymentTests.verify_user_making_payment(BankingApplicationPaymentTests.java:86)
+	at mobile_tests.PaymentTests.verify_user_making_payment(PaymentTests.java:86)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -113,7 +113,20 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
 <td>19</td>
-<td>mobile_tests.BankingApplicationPaymentTests@51e5fc98</td></tr>
+<td>mobile_tests.PaymentTests@60d8c9b7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='web_tests.MainPageTests.validate_title_test()'><b>validate_title_test</b><br>Test class: web_tests.MainPageTests</td>
+<td></td>
+<td>3</td>
+<td>web_tests.MainPageTests@3967e60c</td></tr>
 </table><p>
 </body>
 </html>

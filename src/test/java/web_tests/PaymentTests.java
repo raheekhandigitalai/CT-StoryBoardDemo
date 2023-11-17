@@ -1,40 +1,28 @@
-package mobile_tests;
+package web_tests;
 
-import base.MobileDeviceDriver;
+import base.DesktopBrowserDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertNotEquals;
 
-public class BankingApplicationPaymentTests extends MobileDeviceDriver {
+public class PaymentTests extends DesktopBrowserDriver {
 
     @Test
-    @Parameters({"mobile.os"})
-    public void verify_user_making_payment(String mobileOS) throws InterruptedException {
+    public void verify_user_making_payment() {
         getDriver().navigate().to("https://demo-bank.ct.digital.ai/login");
 
         WebElement loginButton = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='dx-button-content' and contains(text(), 'Login')]")));
 
         getDriver().findElement(By.xpath("(//input[@class='dx-texteditor-input'])[1]")).sendKeys("company");
         getDriver().findElement(By.xpath("(//input[@class='dx-texteditor-input'])[2]")).sendKeys("company");
-        
+
         loginButton.click();
 
-        Thread.sleep(2000);
-
-        try {
-            if (mobileOS.equalsIgnoreCase("android")) {
-                loginButton.click();
-            }
-        } catch (Exception e) {
-            // Nothing
-        }
-
         WebElement welcomeHeader = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='welcome-header']")));
-        
+
         String actualText = welcomeHeader.getText();
         String expectedText = "Welcome to your account, Tester";
 
@@ -48,37 +36,26 @@ public class BankingApplicationPaymentTests extends MobileDeviceDriver {
             helper.addStepInReport("Actual Text: " + actualText + ", Expected Value : " + expectedText, "false");
         }
 
-        Thread.sleep(3000);
-
-        WebElement currentAmountElement = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='total-balance-amount']")));
+        WebElement currentAmountElement = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='amount']")));
         String amountTextBeforePayment = currentAmountElement.getText().replaceAll("[^\\d.]", "");;
         int balanceBeforePayment = Integer.parseInt(amountTextBeforePayment);
 
         WebElement transferFundsButtonMainPage = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='dx-button-text' and contains(text(), 'Transfer Funds')]")));
         transferFundsButtonMainPage.click();
 
-        // //*[@class='dx-popup-content']//*[@class='dx-button-content' and contains(text(), 'Transfer')]
-        WebElement transferFundsButtonPopupPage = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@data-auto='transfer-button']//*[@class='dx-button-content']")));
+        WebElement transferFundsButtonPopupPage = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='dx-popup-content']//*[@class='dx-button-content' and contains(text(), 'Transfer Funds')]")));
 
         getDriver().findElement(By.name("NAME")).sendKeys("Derek Holt");
         getDriver().findElement(By.name("PHONE")).sendKeys("3470000000");
         getDriver().findElement(By.name("AMOUNT")).sendKeys("100");
+        getDriver().findElement(By.id("country-arrow")).click();
 
-        Thread.sleep(3000);
+        WebElement countrySelection = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//*[text()='USA']")));
+        countrySelection.click();
 
         transferFundsButtonPopupPage.click();
 
-        try {
-            if (mobileOS.equalsIgnoreCase("android")) {
-                transferFundsButtonPopupPage.click();
-            }
-        } catch (Exception e) {
-            // Nothing
-        }
-
-        Thread.sleep(3000);
-
-        WebElement amountUpdatedElement = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='total-balance-amount']")));
+        WebElement amountUpdatedElement = getWait().until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@class='amount']")));
         String amountTextAfterPayment = amountUpdatedElement.getText().replaceAll("[^\\d.]", "");
         int balanceAfterPayment = Integer.parseInt(amountTextAfterPayment);
 
