@@ -22,7 +22,7 @@ Provide **Cloud URL** and **Access Key** in ```config.properties``` file.
 
 [Obtaining your Access Key](https://docs.digital.ai/bundle/TE/page/obtaining_access_key.html).
 
-#### Section 1
+#### Section 2
 
 Make sure Maven is installed from the Execution Machine.
 
